@@ -164,8 +164,8 @@
         <!--  END Phần tạo bài tập -->
 
         <!-- START Phần bài tập  -->
-            <div style="margin-top: 2%;" class="card bg-light text-dark">
-                <div class="card-body">
+            <div style="margin-top: 2%;" class="card bg-light text-dark" id="homework">
+                <div class="card-body" >
                     <img style="vertical-align: middle; width: 40px;height: 40px;border-radius: 50%;" src="./img/baitap.png" alt="baitap" class="baitap">&nbsp &nbsp Bài tập 1
                 </div>
             </div>
@@ -454,7 +454,7 @@
                     <img style="vertical-align: middle; width: 40px;height: 40px;border-radius: 50%;" src="./img/avatar.jpg" alt="Avatar" class="avatar">&nbsp &nbsp
                     <h4 style="display: inline-block; font-size:18px; font-family: sans-serif;margin-bottom: 5%">Như Huỳnh</h4>
 
-                    <p></p>
+                  
                     <h3 style="border-bottom: 1.5px solid #000;margin-bottom: 4%">Sinh viên: 100</h3>
                     <img style="vertical-align: middle; width: 40px;height: 40px;border-radius: 50%;" src="./img/avatar.jpg" alt="Avatar" class="avatar">&nbsp &nbsp
                     <h4 style="display: inline-block; font-size:18px; font-family: sans-serif;">Như Huỳnh</h4>
@@ -501,6 +501,12 @@
 		});
 </script>
 <script>
+    
+    document.getElementById("homework").addEventListener('click',checkClick);
+    function checkClick(){
+        console.log('aaaaa');
+    }
+
 var k =1
 function clickPlus() {
     if(k==1)
@@ -520,6 +526,9 @@ function clickPlus() {
     let ck = document.getElementById('ckeditor');
       ck.style.display = "none"
   }
+
+  
+  
 </script>
 
 <!-- ------------------------------------------------- -->
